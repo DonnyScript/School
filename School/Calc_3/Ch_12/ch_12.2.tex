@@ -1,0 +1,123 @@
+% ch_12.2.tex - This is the intro chapter to vectors 
+\documentclass[12pt]{article}
+\usepackage{time,amsmath,tikz}
+\usetikzlibrary{arrows}
+
+\title{\vspace{-5.9cm}Chapter 12.2 notes}
+\author{Donovan McCarthy\\
+	U of M Dearborn}
+
+\maketitle
+\date
+
+\begin{document}
+\fontsize{11}{5}
+\pagenumbering{gobble}
+
+\section*{\center Intro to \underline{Vectors}}
+A \textbf{vector} is a quanity that has both magnitude and direction. The \textit{magnitude} is denoted by the length of the arrow and the \textit{direction} of the arrow indicated the vectors direction. This is denoted as such: $\vec{v}$, below is an example of an basic vector.  
+\\*
+$\vec{v}= \vec{AB}$:
+$ 
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.5cm,>=stealth]
+\draw[->] (xyz cs:z=0) node[left] {$A$} --node[above]{v} (xyz cs:z=3) node[above] {$B$};
+\end{tikzpicture}
+$ 
+\section*{\center Combining vectors}
+\textit{Definition of vector addition} if \textbf{u} and \textbf{v} are vectors positioned so the inital point of \textbf{v} is at the terminal point of \textbf{u}, then the \textbf{sum u + v} is the vector from the inital point of \textbf{u} to the terminal point of \textbf{v}.
+\\*
+\\*
+\textit{Definition of scalar Multiplication} if c is a scalar and \textbf{v} is a vector, then the \textbf{scalar multiple of cv} is the vector whose length is $|c|$ times the length of \textbf{v} and whose directions is the same as \textbf{v} if $c > 0$ and is oppsite to \textbf{v} if $ c < 0$. If $c = 0$ or $v =0$, then $cv =0$.
+\\*
+Example: \quad
+$ 
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.5cm,>=stealth]
+\draw[->] (xyz cs:z=0) -- node[above]{v} (xyz cs:z=3) ;
+\end{tikzpicture}
+$
+$ 
+\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.5cm,>=stealth]
+\draw[->] (xyz cs:z=0) -- node[above]{2v} (xyz cs:z=6) ;
+\end{tikzpicture}
+$
+\\* 
+\\
+The next part of the section is when we are given pointsand have to find the vector of the points. The following is a way to do that.
+\\*
+\textit{How to find the vector between two points} Given the points $A(x_{1},y_{1},z_{1})$ and $B(x_{2},y_{2},z_{2})$ the vector \textbf{a} with representation $\vec{AB}$ is 
+\\*
+\\
+$
+\vec{a} = \langle x_{2}-x_{1},y_{2}-y_{1},z_{2}-z_{2}\rangle
+$
+\\*
+The length of the two-dimensional vector $ \vec{a} = \langle a_{1},b_{1} \rangle$ is 
+\\*
+$ |\vec{a}| = \sqrt{a_{1}^{2}+a_{2}^{2}} $
+\\*
+The length of the three-dimensional vector $\vec{a} = \langle a_{1},a_{2},a_{3} \rangle$ is
+\\*
+$ |\vec{a}| = \sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}} $
+\newpage 
+\noindent To add, subtract, and multiply vectors you do the following(just add 'z' for 3d vectors):
+\\*
+$ 
+\vec{a} + \vec{b} = \langle a_{1} + b_{1}, a_{2} + b_{2}\rangle
+$
+\\
+$
+\vec{a} - \vec{b} = \langle a_{1} - b_{1}, a_{2} - b_{2}\rangle
+$
+\\
+$
+c*\vec{a} = \langle ca_{1},ca_{2} \rangle
+$
+\\
+\\
+\textit{Properties of Vectors} if 
+$
+\vec{a}, \vec{b},and\vec{c}
+$
+are vectors in $V_{n}$ and c and d are scalars, then:
+\\
+1.)
+\(
+\vec{a} + \vec{b} = \vec{b} + \vec{a}
+\)
+\quad 2.)
+\(
+\vec{a} + (\vec{b} + \vec{c}) = (\vec{a} + \vec{b}) + \vec{c}
+\)
+\\
+\\
+3.)
+\(
+\vec{a} + 0 = \vec{a}
+\)
+\quad 4.)
+\(
+\vec{a} + (-\vec{a}) = 0
+\)
+\\
+\\
+5.)
+\(
+c(\vec{a}+\vec{b})=c\vec{a}+c\vec{b}
+\)
+\quad 6.)
+\(
+(c + d)\vec{a} = c\vec{a} + d\vec{a}
+\)
+\\ 
+\\
+7.)
+\(
+(cd)\vec{a} = c(d\vec{a})
+\)
+\quad 8.)
+\(
+1\vec{a} = \vec{a}
+\)
+
+
+\end{document}

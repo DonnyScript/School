@@ -1,0 +1,40 @@
+%Chapter_12.tex - First page of notes on math 
+
+\documentclass{article}
+\usepackage{times,amsmath,tikz}
+\usetikzlibrary{arrows}
+
+\title{\vspace{-4.0cm}Chapter 12 Notes}
+\author{Donovan McCarthy\\ 
+	U of M Dearborn }
+
+\maketitle
+\date
+\begin{document}
+\section*{\center Three-Dimension Coordinate system}
+We will now use a three dimensional graph as follows:
+\[
+\begin{tikzpicture}[y=0.1cm,x=0.1cm,z=0.1cm,>=stealth]
+\draw[->] (xyz cs:x=0) -- (xyz cs:x=13.5) node[above] {$y$}; 
+\draw[->] (xyz cs:y=0) -- (xyz cs:y=13.5) node[right] {$z$};
+\draw (xyz cs:z=-10) node[below] {$x$}[<-] -- (xyz cs:z=0) ;
+\end{tikzpicture}
+\]
+\section*{\center  New Formulas}
+Distance of two points in 3D:\quad 
+\[
+ |P_{1}P_{2}|= \sqrt{(x_{2}-x_{1})^{2} + (y_{2}-y_{1})^{2} + (z_{2}-z_{1})^{2} }
+\]
+\\*
+Midpoint with 3D:\quad  
+\[
+M(\frac{x_{1} + x_{2}}{2},\frac{y_{1} + y_{2}}{2},\frac{z_{1} + z_{2}}{2})
+\]
+\\*
+An equation of a sphere with center C(h,k,l) and radius r is: \quad
+\[
+(x-h)^{2}+(y-k)^{2}+(z-l)^{2}=r^{2} 
+\]
+
+
+\end{document}
